@@ -1,0 +1,40 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+body {
+  display: flex;
+}
+
+header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  background: var(--gray-0);
+}
+
+.hero {
+  padding: var(--size-10);
+  display: grid;
+  gap: var(--size-5);
+}
+
+.hero-message {
+  display: grid;
+  grid-template-columns: max-content;
+  color: var(--gray-9);
+  line-height: var(--font-lineheight-0);
+}
+
+.hero-message > div:last-child {
+  color: var(--indigo-7);
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+main {
+  position: absolute;
+}
